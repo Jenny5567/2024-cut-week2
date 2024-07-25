@@ -1,0 +1,238 @@
+.container{
+  max-width:1320px ; //1296px+24px=1320px
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+// 字體通用樣式
+
+.h1{
+  font-size: 128px;
+}
+
+.h2{
+  font-size: 64px;
+}
+
+.fs-1{
+  font-size: 32px;
+}
+
+.fs-2{
+  font-size: 24px;
+}
+
+.fs-3{
+  font-size: 20px;
+}
+
+//主色
+.color-main{
+  color: #00FFA3;
+}
+
+.color-white{
+  color: #FFFFFF;
+}
+
+//間距
+.mr-6{
+  margin-right: 24px;
+}
+
+.mb-7{
+  margin-bottom: 28px;
+}
+
+.mb-auto{
+  margin-bottom: auto;
+}
+
+//flex
+.d-flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.ai-star{
+  align-items: flex-start;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+.jc-flex-end{
+  justify-content: flex-end;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.w-50{
+  width: 50%;
+}
+
+//元件
+.btn{
+  padding: 12px 24px;
+  border-radius: 32px;
+  }
+
+.btn-white{
+  background: #FFFFFF;
+  &:hover{
+    background: rgb(234, 225, 225);
+  }
+}
+
+
+.btn-black{
+  background: #000;
+  color:#FFFFFF;
+  &:hover{
+    background: rgb(85, 82, 82);
+  }
+}
+
+//nav
+.header, .banner{
+  background: #000;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    color: #D1D1D1;
+    &:hover{
+      color:#fff;
+    }
+  }
+}
+
+.banner{
+  color:#fff;
+  &-left ,&-right{
+    width: 50%;
+  }
+}
+
+.banner-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  display: block;
+  text-align: right;
+}
+
+
+
+.intro{
+  padding: 160px 0;
+  background-repeat: no-repeat; //預設重複會導致圖片怪怪的 所以要設定不重複
+  background-size: cover; //讓背景圖填滿容器不要留白
+}
+
+.intro-left{
+  flex-direction: column;
+  width: 526px;
+  h2{
+    margin-bottom: 36px;
+  }
+  p{
+    margin-bottom: 32px;
+  }
+  .rectangle{
+    gap:16px;
+  }
+}
+
+.intro-right{
+  gap:24px;
+}
+
+.aboutme{
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.aboutme-cardlist{
+  flex-wrap: wrap;
+  gap:24px;
+  width: 636px;
+}
+
+.aboutme-card{
+  width: calc(50% - 12px); //計算符號兩邊都要有空白
+  box-shadow: 4px 4px 4px 0px #00000014; //陰影
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+}
+
+.aboutme-content{
+  width: 526px;
+  margin-bottom: 36px;
+  h2{
+    margin-bottom: 36px;
+  }
+}
+
+.social{
+  background: linear-gradient(#050014 100%
+  ,#01021E 89%);
+  padding: 96px 0 ;
+}
+
+.arrow-white{
+  font-size: 100px;
+  margin-left: 16px;
+}
+
+.social-list{
+  gap:20px;
+  a{
+    border-radius: 40px;
+  }
+  a:hover{
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+    transition: 0.5s ; //延遲hover動畫
+  }
+}
+
+//project
+.project{
+  padding: 160px 0;
+}
+
+.project-title{
+  width: 746px; //先設定寬度再用auto推到右邊
+  margin-left: auto;
+}
+
+
+
+
+
+
+//footer
+
+.footer{
+  background: #000;
+  p{
+    text-align: center;
+    padding: 40px 0px;
+  }
+}
+
